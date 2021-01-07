@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "electron main.js",
+    "build": "electron-builder build --mac --win --publish never",
+    "deploy": "electron-builder build --mac --win --publish always",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Fernando Villa Rosa",
@@ -15,5 +17,9 @@
   },
   "dependencies": {
     "electron-updater": "^4.3.5"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/worldfernando/electron-teste-autoupdate.git"
   }
 }
